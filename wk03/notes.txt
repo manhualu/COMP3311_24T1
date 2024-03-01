@@ -1,0 +1,14 @@
+Single table with nulls
+
+R(a is NOT NULL, b is NOT NULL, c is NULL, d is NULL)
+S(a is NOT NULL, b is NULL, c is NOT null, d is NULL)
+
+
+Q20. Regex can be used as a domain constraint.
+Refer to the regex cheat sheet I've added to this week's folder.
+
+e.g. 
+    create domain TaxFileNum as char(11) 
+                    check (value ~ '^[0-9]{3}-[0-9]{3}-[0-9]{3}$')
+
+    This just means that the TaxFileNum should be in the format of 012-345-678.
